@@ -1,8 +1,8 @@
 CPP = g++
 
-SRCS = exam.cpp
+SRCS = FunctionOverloading.cpp
 
-TARGET = example
+TARGET = FunctionOverloading
 
 BUILDDIR = buildDir
 
@@ -13,7 +13,7 @@ all: clean createdirs build
 createdirs:
 	$(shell mkdir ${BUILDDIR})
 
-$(CPPOBJS): $(BUILDDIR)/%.o : %.cpp
+$(CPPOBJS):$(BUILDDIR)/%.o : %.cpp
 	$(CPP) -o $@ -c $<
 
 build: $(CPPOBJS)
