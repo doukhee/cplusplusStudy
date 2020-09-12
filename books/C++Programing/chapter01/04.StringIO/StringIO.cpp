@@ -1,6 +1,7 @@
 #include <iostream>
 
 int main(void){
+    /** char array variable */
     char name[100];
     char lang[200];
 
