@@ -1,8 +1,8 @@
 CPP = g++
 
-SRCS = DefaultValue.cpp
+SRCS = InlineFunc.cpp
 
-TARGET = DefaultValue
+TARGET = InlineFunc
 
 BUILDDIR = buildDir
 
@@ -13,7 +13,7 @@ all: clean createdirs build
 createdirs:
 	$(shell mkdir ${BUILDDIR})
 
-$(CPPOBJS):$(BUILDDIR)/%.o : %.cpp
+$(CPPOBJS): $(BUILDDIR)/%.o : %.cpp
 	$(CPP) -c $< -o $@
 
 build: $(CPPOBJS)
@@ -21,6 +21,5 @@ build: $(CPPOBJS)
 
 clean:
 	rm -rf $(BUILDDIR)
-
 
 .SUFFIXES: .cpp .o

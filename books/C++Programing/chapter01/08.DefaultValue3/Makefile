@@ -13,7 +13,7 @@ all: clean createdirs build
 createdirs:
 	$(shell mkdir ${BUILDDIR})
 
-$(CPPOBJS):$(BUILDDIR)/%.o : %.cpp
+$(CPPOBJS): $(BUILDDIR)/%.o : %.cpp
 	$(CPP) -c $< -o $@
 
 build: $(CPPOBJS)

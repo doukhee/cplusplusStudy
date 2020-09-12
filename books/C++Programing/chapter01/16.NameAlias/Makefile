@@ -1,8 +1,8 @@
 CPP = g++
 
-SRCS = DefaultValue.cpp
+SRCS = NameAlias.cpp
 
-TARGET = DefaultValue
+TARGET = NameAlias
 
 BUILDDIR = buildDir
 
@@ -13,14 +13,13 @@ all: clean createdirs build
 createdirs:
 	$(shell mkdir ${BUILDDIR})
 
-$(CPPOBJS):$(BUILDDIR)/%.o : %.cpp
-	$(CPP) -c $< -o $@
-
 build: $(CPPOBJS)
 	$(CPP) -o $(BUILDDIR)/$(TARGET) $^
 
+$(CPPOBJS):$(BUILDDIR)/%.o : %.cpp
+	$(CPP) -c $< -o $@
+
 clean:
 	rm -rf $(BUILDDIR)
-
 
 .SUFFIXES: .cpp .o

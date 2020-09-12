@@ -1,8 +1,8 @@
 CPP = g++
 
-SRCS = DefaultValue.cpp
+SRCS = UsingDcl.cpp
 
-TARGET = DefaultValue
+TARGET = UsingDcl
 
 BUILDDIR = buildDir
 
@@ -21,6 +21,5 @@ build: $(CPPOBJS)
 
 clean:
 	rm -rf $(BUILDDIR)
-
 
 .SUFFIXES: .cpp .o
