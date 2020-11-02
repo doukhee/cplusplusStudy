@@ -1,8 +1,8 @@
 CPP = g++
 
-SRCS = ISAInheritance.cpp
+SRCS = HASCOmposite.cpp
 
-TARGET = ISAInheritance
+TARGET = HASCOmposite
 
 BUILDDIR = buildDir
 
@@ -17,7 +17,7 @@ build: $(CPPOBJS)
 	$(CPP) -o $(BUILDDIR)/$(TARGET) $^
 
 $(CPPOBJS):$(BUILDDIR)/%.o : %.cpp
-	$(CPP) -o $@ -c $<
+	$(CPP) -o $@ -c $< 
 
 clean:
 	rm -rf $(BUILDDIR)

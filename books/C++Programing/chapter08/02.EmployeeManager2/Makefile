@@ -1,8 +1,8 @@
 CPP = g++
 
-SRCS = ISAInheritance.cpp
+SRCS = EmployeeManager.cpp
 
-TARGET = ISAInheritance
+TARGERT = EmployeeManager
 
 BUILDDIR = buildDir
 
@@ -14,7 +14,7 @@ createdirs:
 	$(shell mkdir $(BUILDDIR))
 
 build: $(CPPOBJS)
-	$(CPP) -o $(BUILDDIR)/$(TARGET) $^
+	$(CPP) -o $(BUILDDIR)/$(TARGERT) $^
 
 $(CPPOBJS):$(BUILDDIR)/%.o : %.cpp
 	$(CPP) -o $@ -c $<

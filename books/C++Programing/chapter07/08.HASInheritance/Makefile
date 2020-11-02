@@ -1,8 +1,8 @@
 CPP = g++
 
-SRCS = ISAInheritance.cpp
+SRCS = HASInheritance.cpp
 
-TARGET = ISAInheritance
+TARGET = HASInheritance
 
 BUILDDIR = buildDir
 

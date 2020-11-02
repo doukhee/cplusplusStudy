@@ -1,8 +1,8 @@
 CPP = g++
 
-SRCS = ISAInheritance.cpp
+SRCS = ObjectPointer.cpp
 
-TARGET = ISAInheritance
+TARGET = ObjectPointer
 
 BUILDDIR = buildDir
 
