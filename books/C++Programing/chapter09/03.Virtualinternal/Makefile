@@ -1,8 +1,8 @@
 CPP = g++
 
-SRCS = RealObjUnder2.cpp
+SRCS = Virtualinternal.cpp
 
-TARGET = RealObjUnder2
+TARGET = Virtualinternal
 
 BUILDDIR = buildDir
 
